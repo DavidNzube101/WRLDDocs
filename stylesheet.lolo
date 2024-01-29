@@ -1,0 +1,65 @@
+
+use BuiltIn.ThemeManager
+
+ThemeManager.init([tm, WRLDGreen])
+
+@insert tm
+
+@keyframes float:
+    0%:
+        transform = translateY(-5px)
+    ;
+    50%:
+        transform = translateY(-10px)
+    ;
+    100%:
+        transform = translateY(-5px)
+    ;
+;
+body:
+    display  = grid
+    place-items  = center
+    background = #000000
+    font-family = monospace
+;
+img:
+    border-radius  = 10pc
+;
+p:
+	font-size  = 25px
+	font-weight  = bolder
+;
+.container:
+    background = $(--tmbg)
+    width = 70%
+    aspect-ratio = 16/10
+    border-radius = 1rem
+    display = flex
+    align-items = center
+    justify-content = center
+    color = $(--tmfg)
+;
+#unique-text:
+    animation = float 5s infinite linear
+;
+.horizontal-box-menu:
+    display = flex
+    align-items = center
+    justify-content = space-between
+    width = 70%
+    margin = 10px
+;
+.horizontal-box-menu button:
+    background = #1c2727
+    outline = none
+    border = 0
+    padding = 10px
+    color = white
+    border-radius = 1rem
+    font-weight = bolder
+;
+.horizontal-box-menu button a:
+    text-decoration = none
+    color = white
+;
+			
